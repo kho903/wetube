@@ -38,9 +38,9 @@ const routes={
     changePassword: CHANGE_PASSWORD,
     videos: VIDEOS,
     upload: UPLOAD,
-    videoDetail: (id) =>{
-        if(id){
-            return `/videos/${id}`
+    videoDetail: id => {
+        if (id) {
+            return `videos/${id}`
         } else{
             return VIDEO_DETAIL;
         }
